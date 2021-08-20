@@ -1,0 +1,206 @@
+:root {
+    --main-bg-color: #fff;
+    --dark-bg-color: #2f303a;
+    --button-bg-color: #f5f4fa;
+    --active-color: #2196f3;
+  
+    --main-text-color: #212121;
+    --secondary-text-color: #757575;
+    --white-text-color: #fff;
+    /*--blue-text-color: var(--hover-bg-color);*/
+    --black-text-color: #000000;
+    --contacts-header-text-color: rgba(255, 255, 255, 0.6);
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: normal; /*400*/
+    font-style: normal;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+  }
+  
+  /*---------------------HEADER-------------------------*/
+  /*------logo*/
+  .logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--active-color);
+    text-decoration: none;
+  }
+  .logo-part-in-header {
+    color: var(--black-text-color);
+  }
+  
+  /*-----Nav in Header*/
+  .list {
+    list-style: none;
+  }
+  .nav-in-header-element > a {
+    font-weight: 500;
+    line-height: 1.14; /*16px*/
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--main-text-color);
+  }
+  .nav-in-header-element > a:hover,
+  .nav-in-header-element > a:focus {
+    color: var(--active-color);
+  }
+  
+  /*-------Contacts in Header*/
+  .contact-in-header-element > a {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+  }
+  .contact-in-header-element a:hover,
+  .contact-in-header-element a:focus {
+    color: var(--active-color);
+  }
+  .nav-in-header-element .current {
+    color: var(--active-color);
+  }
+  
+  /*-----------main_HomePage.html-------------*/
+  .homepage-hero-block {
+    background-color: var(--dark-bg-color);
+  }
+  .homepage-main-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+  }
+  .nomepage-button-order {
+    font-family: inherit;
+    background-color: var(--active-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-text-color);
+  }
+  .homepage-advantages-element-title {
+    font-size: inherit;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+  }
+  .homepage-advantages-element-text {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+  }
+  .homepage-make-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+  }
+  .homepage-team-block {
+    background-color: var(--button-bg-color);
+  }
+  .homepage-team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+  }
+  .homepage-surname-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+  }
+  .homepage-position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+  }
+  
+  /*---------------------main Portfolio.html--------------------*/
+  .list-filter-button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: var(--button-bg-color);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .list-filter-button:hover,
+  .list-filter-button:focus {
+    background-color: var(--active-color);
+    color: var(--white-text-color);
+    cursor: pointer;
+  }
+  .list-portfolio-block-link {
+    text-decoration: none;
+    font-style: normal;
+  }
+  .project-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-text-color);
+  }
+  .project-discription {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+  }
+  
+  /*----------------FOOTER--------------------*/
+  footer {
+    background: var(--dark-bg-color);
+  }
+  .logo-part-in-footer {
+    color: var(--white-text-color);
+  }
+  .address-list-in-footer {
+    font-style: normal;
+  }
+  
+  .address-in-footer-element-text > a {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-text-color);
+    text-decoration: none;
+  }
+  .address-in-footer-element > a {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--contacts-header-text-color);
+    text-decoration: none;
+  }
