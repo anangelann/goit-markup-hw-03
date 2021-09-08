@@ -102,6 +102,84 @@ img {
 .site-contacts-item:first-child {
 	margin-right: 30px;
 }
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #ececec;
+}
+/* ------navbar*/
+.navbar {
+    display: flex;
+    align-items: center;
+}
+/*------logo*/
+.logo {
+    display: block;
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--active-color);
+    text-decoration: none;
+}
+.logo-part-in-header {
+    color: var(--black-text-color);
+}
+
+/*-----nav in Header*/
+.nav-in-header {
+    display: flex;
+    margin-left: 93px;
+}
+.nav-in-header-element:not(:last-child) {
+    margin-right: 50px;
+}
+.nav-in-header-element > a {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    line-height: 1.14; /*16px*/
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+.nav-in-header-element > a:hover,
+.nav-in-header-element > a:focus {
+    color: var(--active-color);
+}
+
+/*-------Contacts in Header*/
+.contact-in-header {
+    display: flex;
+    margin-left: auto;
+}
+.contact-in-header-element:not(:last-child) {
+    margin-right: 50px;
+}
+.contact-in-header-element > a {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+.contact-in-header-element a:hover,
+.contact-in-header-element a:focus {
+    color: var(--active-color);
+}
+.nav-in-header-element .current {
+    color: var(--active-color);
+}
 /* Логотип */
 .logo {
 	color: var(--color-main-text);
@@ -249,44 +327,39 @@ section .hidden {
 }
 
 /* Футер */
-.ftr {
-	background-color: var(--secondary-bg-color);
-	color: var(--primary-bg-color);
-	font-size: 26px;
-	line-height: 1.19;
-	letter-spacing: 0.03em;
-	padding-top: 70px;
-	padding-bottom: 60px;
+.footer {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background: var(--dark-bg-color);
 }
-.ftr .container {
-	padding-top: 0px;
-	padding-bottom: 0px;
+.footer .logo {
+    margin-bottom: 20px;
+}
+.logo-part-in-footer {
+    color: var(--white-text-color);
 }
 
-.ftr p {
-	font-size: 14px;
-	line-height: 1.71;
-	font-style: normal;
-	color: var(--white-text-color);
-	margin-top: 20px;
-	margin-bottom: 0px;
-}
-.ftr .logo {
-	color: var(--primary-bg-color);
+.address-list-in-footer {
+    font-style: normal;
 }
 
-.ftr .ftr-contacts-item {
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.71;
-	letter-spacing: 0.03em;
-	color: var(--color-secondary-text);
+.address-in-footer-element-text > a {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-text-color);
+    text-decoration: none;
 }
-
-.ftr .ftr-contacts-items:hover,
-.ftr .ftr-contacts-item:focus {
-	color: var(--primary-bg-color);
+.address-in-footer-element > a {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--contacts-header-text-color);
+    text-decoration: none;
+}
+.address-list-in-footer li:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 /* Portfolio.html */
